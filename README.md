@@ -26,7 +26,7 @@ Implement the remove method of a max-heap (Real Name, Username)
 ````
 
 ````
-Method that reads a sequence of integers from an iput file (Real Name, Username)
+Method that reads a sequence of integers from an iput file (Priscilla Ballesteros, PBallesteros02)
   => "data.txt"
     => This file contains 100 integers (no duplicates, and positive numbers)
     => Each line is an integer
