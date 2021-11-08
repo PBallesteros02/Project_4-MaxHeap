@@ -1,4 +1,8 @@
+import java.util.Arrays;
 import java.util.Scanner;
+
+import apple.laf.JRSUIConstants.Size;
+
 import java.io.File;
 public class DriverMH {
 
@@ -46,7 +50,12 @@ public class DriverMH {
      * @param heap The MaxHeap object from which to perform 10 removals.
      */
     public static void perform10Removals(MaxHeap<Integer> heap) {
+        
+        for(int k = 0 ; k <= 10 ; k++)
+        heap--;
+        MaxHeap = Integer.valueOf(heap);
 
+        return MaxHeap;
     }
 
     /**
@@ -54,7 +63,14 @@ public class DriverMH {
      * @param heap
      */
     public static void print10Num_Removal(MaxHeap<Integer> heap, String fileName) {
-
+        File file = new File("data.txt");
+        Scanner output = new Scanner (file);
+        MaxHeap<Integer> list = new MaxHeap<Integer>();
+        while (output.hasNextInt()){
+           int num = output.nextInt();
+           list.add(num);
+        }
+      file.close();
     }
 
 
