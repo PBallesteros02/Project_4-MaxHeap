@@ -52,10 +52,7 @@ public class DriverMH {
     public static void perform10Removals(MaxHeap<Integer> heap) {
         
         for(int k = 0 ; k <= 10 ; k++)
-        heap--;
-        MaxHeap = Integer.valueOf(heap);
-
-        return MaxHeap;
+        heap.removeMax();
     }
 
     /**
