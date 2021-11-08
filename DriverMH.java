@@ -63,14 +63,22 @@ public class DriverMH {
      * @param heap
      */
     public static void print10Num_Removal(MaxHeap<Integer> heap, String fileName) {
-        File file = new File("data.txt");
-        Scanner output = new Scanner (file);
-        MaxHeap<Integer> list = new MaxHeap<Integer>();
-        while (output.hasNextInt()){
-           int num = output.nextInt();
-           list.add(num);
-        }
-      file.close();
+        File myfile = new File("data.txt");
+        Scanner scan = new Scanner(myfile);
+        Integer[] output = new Integer[100];
+        int i = 0;
+        output[i] = Integer.valueOf(i);
+
+        while(scan.hasNextInt()){
+
+            output[i++] = scan.nextInt();
+       }
+
+        scan.close();
+        String outputline;
+        outputline = String.valueOf(output);
+        outputline.print("Heap after 10 removals:" + heap.getHeapValue_atIndex();
+        
     }
 
 
