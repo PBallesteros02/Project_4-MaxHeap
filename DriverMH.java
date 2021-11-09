@@ -74,7 +74,14 @@ public class DriverMH {
         scan.close();
         String outputline;
         outputline = String.valueOf(output);
-        outputline.print("Heap after 10 removals:" + heap.getHeapValue_atIndex();
+        outputline.print("Heap after 10 removals:" );
+        for (int i = 10; i > 0; i--) {
+            heap.removeMax();
+        }
+         for (int i = 1; i < 11; i++) {
+            int number = heap.printOut(i);
+            outputline.print(number + ","); }
+
         
     }
 
